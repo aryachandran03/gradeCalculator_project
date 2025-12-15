@@ -4,16 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grade Calculator</title>
+    <title>Calculator</title>
     <!-- Link CSS -->
     <link rel="stylesheet" href="./CSS/style.css" />
 </head>
 
 <body>
     <Main style="text-align: center;">
-        <h1>Grade Calculator</h1>
-        <div>
-            <button class="cal_button" onclick="calculateGrade()">Start Calculation</button>
+        <div class="calculator">
+            <h2>Calculator</h2>
+
+            <input type="number" id="number_1" placeholder="Enter first number">
+            <input type="number" id="number_2" placeholder="Enter second number">
+
+            <br>
+
+            <button onclick="add()">Add</button>
+            <button onclick="subtract()">Subtract</button>
+            <button onclick="multiply()">Multiply</button>
+            <button onclick="divide()">Divide</button>
+
+            <br>
+
+            <button onclick="square()">Square (x²)</button>
+            <button onclick="cube()">Cube (x³)</button>
+
+            <div class="result" id="result"></div>
         </div>
     </Main>
 </body>
